@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD5B633F21EB070B00FBF498 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B633E21EB070B00FBF498 /* AppDelegate.swift */; };
+		AD5B634121EB070B00FBF498 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B634021EB070B00FBF498 /* MainViewController.swift */; };
+		AD5B634421EB070B00FBF498 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5B634221EB070B00FBF498 /* Main.storyboard */; };
+		AD5B634721EB070B00FBF498 /* Vidzam.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD5B634521EB070B00FBF498 /* Vidzam.xcdatamodeld */; };
+		AD5B634921EB070B00FBF498 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD5B634821EB070B00FBF498 /* Assets.xcassets */; };
+		AD5B634C21EB070B00FBF498 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5B634A21EB070B00FBF498 /* LaunchScreen.storyboard */; };
+		AD5B635721EB070B00FBF498 /* VidzamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B635621EB070B00FBF498 /* VidzamTests.swift */; };
+		AD5B636621EB180900FBF498 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B636521EB180900FBF498 /* Networking.swift */; };
+		AD5B636721EB180900FBF498 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B636521EB180900FBF498 /* Networking.swift */; };
+		AD5B636921EB208800FBF498 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B636821EB208800FBF498 /* MusicManager.swift */; };
+		AD5B636A21EB208800FBF498 /* MusicManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD5B636821EB208800FBF498 /* MusicManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD5B635321EB070B00FBF498 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD5B633321EB070B00FBF498 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD5B633A21EB070B00FBF498;
+			remoteInfo = Vidzam;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD5B633B21EB070B00FBF498 /* Vidzam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vidzam.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5B633E21EB070B00FBF498 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AD5B634021EB070B00FBF498 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		AD5B634321EB070B00FBF498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD5B634621EB070B00FBF498 /* Vidzam.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Vidzam.xcdatamodel; sourceTree = "<group>"; };
+		AD5B634821EB070B00FBF498 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AD5B634B21EB070B00FBF498 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AD5B634D21EB070B00FBF498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD5B635221EB070B00FBF498 /* VidzamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VidzamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD5B635621EB070B00FBF498 /* VidzamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VidzamTests.swift; sourceTree = "<group>"; };
+		AD5B635821EB070B00FBF498 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD5B636521EB180900FBF498 /* Networking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		AD5B636821EB208800FBF498 /* MusicManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD5B633821EB070B00FBF498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD5B634F21EB070B00FBF498 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD5B633221EB070B00FBF498 = {
+			isa = PBXGroup;
+			children = (
+				AD5B633D21EB070B00FBF498 /* Vidzam */,
+				AD5B635521EB070B00FBF498 /* VidzamTests */,
+				AD5B633C21EB070B00FBF498 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD5B633C21EB070B00FBF498 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD5B633B21EB070B00FBF498 /* Vidzam.app */,
+				AD5B635221EB070B00FBF498 /* VidzamTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD5B633D21EB070B00FBF498 /* Vidzam */ = {
+			isa = PBXGroup;
+			children = (
+				AD5B636121EB0A9700FBF498 /* Models */,
+				AD5B636221EB0A9E00FBF498 /* Views */,
+				AD5B636321EB0AB000FBF498 /* Controllers */,
+				AD5B633E21EB070B00FBF498 /* AppDelegate.swift */,
+				AD5B634821EB070B00FBF498 /* Assets.xcassets */,
+				AD5B634A21EB070B00FBF498 /* LaunchScreen.storyboard */,
+				AD5B634D21EB070B00FBF498 /* Info.plist */,
+				AD5B634521EB070B00FBF498 /* Vidzam.xcdatamodeld */,
+			);
+			path = Vidzam;
+			sourceTree = "<group>";
+		};
+		AD5B635521EB070B00FBF498 /* VidzamTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD5B635621EB070B00FBF498 /* VidzamTests.swift */,
+				AD5B635821EB070B00FBF498 /* Info.plist */,
+			);
+			path = VidzamTests;
+			sourceTree = "<group>";
+		};
+		AD5B636121EB0A9700FBF498 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				AD5B636421EB17B800FBF498 /* Managers */,
+				AD5B636521EB180900FBF498 /* Networking.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		AD5B636221EB0A9E00FBF498 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD5B634221EB070B00FBF498 /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		AD5B636321EB0AB000FBF498 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AD5B634021EB070B00FBF498 /* MainViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		AD5B636421EB17B800FBF498 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				AD5B636821EB208800FBF498 /* MusicManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD5B633A21EB070B00FBF498 /* Vidzam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD5B635B21EB070B00FBF498 /* Build configuration list for PBXNativeTarget "Vidzam" */;
+			buildPhases = (
+				AD5B633721EB070B00FBF498 /* Sources */,
+				AD5B633821EB070B00FBF498 /* Frameworks */,
+				AD5B633921EB070B00FBF498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Vidzam;
+			productName = Vidzam;
+			productReference = AD5B633B21EB070B00FBF498 /* Vidzam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD5B635121EB070B00FBF498 /* VidzamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD5B635E21EB070B00FBF498 /* Build configuration list for PBXNativeTarget "VidzamTests" */;
+			buildPhases = (
+				AD5B634E21EB070B00FBF498 /* Sources */,
+				AD5B634F21EB070B00FBF498 /* Frameworks */,
+				AD5B635021EB070B00FBF498 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD5B635421EB070B00FBF498 /* PBXTargetDependency */,
+			);
+			name = VidzamTests;
+			productName = VidzamTests;
+			productReference = AD5B635221EB070B00FBF498 /* VidzamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD5B633321EB070B00FBF498 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Zapps Inc";
+				TargetAttributes = {
+					AD5B633A21EB070B00FBF498 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = E4Q76K4U8V;
+						ProvisioningStyle = Automatic;
+					};
+					AD5B635121EB070B00FBF498 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = E4Q76K4U8V;
+						ProvisioningStyle = Automatic;
+						TestTargetID = AD5B633A21EB070B00FBF498;
+					};
+				};
+			};
+			buildConfigurationList = AD5B633621EB070B00FBF498 /* Build configuration list for PBXProject "Vidzam" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD5B633221EB070B00FBF498;
+			productRefGroup = AD5B633C21EB070B00FBF498 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD5B633A21EB070B00FBF498 /* Vidzam */,
+				AD5B635121EB070B00FBF498 /* VidzamTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD5B633921EB070B00FBF498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5B634C21EB070B00FBF498 /* LaunchScreen.storyboard in Resources */,
+				AD5B634921EB070B00FBF498 /* Assets.xcassets in Resources */,
+				AD5B634421EB070B00FBF498 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD5B635021EB070B00FBF498 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD5B633721EB070B00FBF498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5B634121EB070B00FBF498 /* MainViewController.swift in Sources */,
+				AD5B634721EB070B00FBF498 /* Vidzam.xcdatamodeld in Sources */,
+				AD5B633F21EB070B00FBF498 /* AppDelegate.swift in Sources */,
+				AD5B636621EB180900FBF498 /* Networking.swift in Sources */,
+				AD5B636921EB208800FBF498 /* MusicManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD5B634E21EB070B00FBF498 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD5B635721EB070B00FBF498 /* VidzamTests.swift in Sources */,
+				AD5B636721EB180900FBF498 /* Networking.swift in Sources */,
+				AD5B636A21EB208800FBF498 /* MusicManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD5B635421EB070B00FBF498 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD5B633A21EB070B00FBF498 /* Vidzam */;
+			targetProxy = AD5B635321EB070B00FBF498 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD5B634221EB070B00FBF498 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD5B634321EB070B00FBF498 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD5B634A21EB070B00FBF498 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD5B634B21EB070B00FBF498 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD5B635921EB070B00FBF498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AD5B635A21EB070B00FBF498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD5B635C21EB070B00FBF498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = E4Q76K4U8V;
+				INFOPLIST_FILE = Vidzam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zappsinc.Vidzam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		AD5B635D21EB070B00FBF498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = E4Q76K4U8V;
+				INFOPLIST_FILE = Vidzam/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zappsinc.Vidzam;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		AD5B635F21EB070B00FBF498 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E4Q76K4U8V;
+				INFOPLIST_FILE = VidzamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zappsinc.VidzamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vidzam.app/Vidzam";
+			};
+			name = Debug;
+		};
+		AD5B636021EB070B00FBF498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = E4Q76K4U8V;
+				INFOPLIST_FILE = VidzamTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zappsinc.VidzamTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Vidzam.app/Vidzam";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD5B633621EB070B00FBF498 /* Build configuration list for PBXProject "Vidzam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5B635921EB070B00FBF498 /* Debug */,
+				AD5B635A21EB070B00FBF498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD5B635B21EB070B00FBF498 /* Build configuration list for PBXNativeTarget "Vidzam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5B635C21EB070B00FBF498 /* Debug */,
+				AD5B635D21EB070B00FBF498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD5B635E21EB070B00FBF498 /* Build configuration list for PBXNativeTarget "VidzamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD5B635F21EB070B00FBF498 /* Debug */,
+				AD5B636021EB070B00FBF498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD5B634521EB070B00FBF498 /* Vidzam.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD5B634621EB070B00FBF498 /* Vidzam.xcdatamodel */,
+			);
+			currentVersion = AD5B634621EB070B00FBF498 /* Vidzam.xcdatamodel */;
+			path = Vidzam.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AD5B633321EB070B00FBF498 /* Project object */;
+}

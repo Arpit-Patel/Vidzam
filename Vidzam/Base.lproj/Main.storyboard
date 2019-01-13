@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G1408" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Vidzam" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Video url" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o3u-XM-hkW">
+                                <rect key="frame" x="16" y="152" width="343" height="70"/>
+                                <color key="backgroundColor" red="0.76461576249999996" green="1" blue="0.93273964700000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Start time (secs)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bpj-ES-weH">
+                                <rect key="frame" x="126.5" y="283" width="122" height="30"/>
+                                <color key="backgroundColor" red="0.76461576249999996" green="1" blue="0.93273964700000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Muszam" translatesAutoresizingMaskIntoConstraints="NO" id="lyN-Pm-wva">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lyN-Pm-wva" secondAttribute="height" multiplier="375:128" id="gj6-2k-1tj"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKO-9v-dDu">
+                                <rect key="frame" x="157" y="410" width="61" height="28"/>
+                                <color key="backgroundColor" red="0.76461576249999996" green="1" blue="0.93273964700000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="submit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9LQ-Hx-bdA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.045463416808631772" green="0.3383009966479717" blue="0.91418019693750174" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="o3u-XM-hkW" firstAttribute="centerX" secondItem="lyN-Pm-wva" secondAttribute="centerX" id="180-PX-BTr"/>
+                            <constraint firstItem="NKO-9v-dDu" firstAttribute="centerX" secondItem="Bpj-ES-weH" secondAttribute="centerX" id="9zJ-uO-kXz"/>
+                            <constraint firstItem="Bpj-ES-weH" firstAttribute="top" secondItem="o3u-XM-hkW" secondAttribute="bottom" constant="61" id="EQ3-aT-nqb"/>
+                            <constraint firstAttribute="trailing" secondItem="lyN-Pm-wva" secondAttribute="trailing" id="Loe-U9-7Y0"/>
+                            <constraint firstItem="NKO-9v-dDu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="141" id="PSf-TV-5kA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Bpj-ES-weH" secondAttribute="trailing" constant="110.5" id="RvZ-RP-tQM"/>
+                            <constraint firstItem="o3u-XM-hkW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="V9u-Jd-Obc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NKO-9v-dDu" secondAttribute="trailing" constant="141" id="WFV-Kb-XDM"/>
+                            <constraint firstItem="o3u-XM-hkW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XHi-OY-0iS"/>
+                            <constraint firstItem="NKO-9v-dDu" firstAttribute="top" secondItem="Bpj-ES-weH" secondAttribute="bottom" constant="97" id="YD9-m5-75K"/>
+                            <constraint firstItem="o3u-XM-hkW" firstAttribute="top" secondItem="lyN-Pm-wva" secondAttribute="bottom" constant="24" id="ZDK-mo-Pbb"/>
+                            <constraint firstItem="Bpj-ES-weH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="110.5" id="dvZ-Ew-8w7"/>
+                            <constraint firstItem="lyN-Pm-wva" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="f2m-rw-dbe"/>
+                            <constraint firstItem="lyN-Pm-wva" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="hTC-GF-WyD"/>
+                            <constraint firstItem="Bpj-ES-weH" firstAttribute="centerX" secondItem="o3u-XM-hkW" secondAttribute="centerX" id="hlK-tS-n1t"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="NKO-9v-dDu" secondAttribute="bottom" constant="229" id="qoN-0m-C4E"/>
+                            <constraint firstItem="Bpj-ES-weH" firstAttribute="top" secondItem="o3u-XM-hkW" secondAttribute="bottom" constant="61" id="tEK-N2-zjx"/>
+                            <constraint firstItem="NKO-9v-dDu" firstAttribute="top" secondItem="Bpj-ES-weH" secondAttribute="bottom" constant="97" id="xW2-Hg-m06"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="startTimeField" destination="Bpj-ES-weH" id="XO7-2s-ImI"/>
+                        <outlet property="videoUrlField" destination="o3u-XM-hkW" id="XIC-WB-Mrs"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Muszam" width="300" height="75"/>
+    </resources>
+</document>
