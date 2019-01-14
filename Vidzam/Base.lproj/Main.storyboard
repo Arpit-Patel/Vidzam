@@ -1,20 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G1408" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Result View Controller-->
+        <scene sceneID="eIg-fe-wKX">
+            <objects>
+                <viewController storyboardIdentifier="resultVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Kfv-c4-mIE" customClass="ResultViewController" customModule="Vidzam" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SWo-rq-glH"/>
+                        <viewControllerLayoutGuide type="bottom" id="amv-OE-XnK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4XN-3P-ew7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Artist: " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="59L-I8-OWW">
+                                <rect key="frame" x="40" y="189" width="297" height="289"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.045463416809999997" green="0.33830099660000001" blue="0.91418019689999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="59L-I8-OWW" firstAttribute="top" secondItem="SWo-rq-glH" secondAttribute="bottom" constant="169" id="QPw-tk-9DZ"/>
+                            <constraint firstItem="59L-I8-OWW" firstAttribute="leading" secondItem="4XN-3P-ew7" secondAttribute="leadingMargin" constant="24" id="dcg-V6-eOG"/>
+                            <constraint firstItem="59L-I8-OWW" firstAttribute="centerY" secondItem="4XN-3P-ew7" secondAttribute="centerY" id="e65-L0-WPN"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="59L-I8-OWW" secondAttribute="trailing" constant="22" id="shd-dW-6IK"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="musicResultLabel" destination="59L-I8-OWW" id="n3f-xK-zOI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFp-QZ-ZrG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="988" y="36.431784107946029"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="Vidzam" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -24,10 +58,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Video url" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="o3u-XM-hkW">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Video url" translatesAutoresizingMaskIntoConstraints="NO" id="o3u-XM-hkW">
                                 <rect key="frame" x="16" y="152" width="343" height="70"/>
                                 <color key="backgroundColor" red="0.76461576249999996" green="1" blue="0.93273964700000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="13"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Start time (secs)" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bpj-ES-weH">
@@ -44,7 +78,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NKO-9v-dDu">
-                                <rect key="frame" x="157" y="410" width="61" height="28"/>
+                                <rect key="frame" x="166" y="410" width="43" height="28"/>
                                 <color key="backgroundColor" red="0.76461576249999996" green="1" blue="0.93273964700000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <state key="normal" title="Submit">
@@ -62,10 +96,10 @@
                             <constraint firstItem="NKO-9v-dDu" firstAttribute="centerX" secondItem="Bpj-ES-weH" secondAttribute="centerX" id="9zJ-uO-kXz"/>
                             <constraint firstItem="Bpj-ES-weH" firstAttribute="top" secondItem="o3u-XM-hkW" secondAttribute="bottom" constant="61" id="EQ3-aT-nqb"/>
                             <constraint firstAttribute="trailing" secondItem="lyN-Pm-wva" secondAttribute="trailing" id="Loe-U9-7Y0"/>
-                            <constraint firstItem="NKO-9v-dDu" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="141" id="PSf-TV-5kA"/>
+                            <constraint firstItem="NKO-9v-dDu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PSf-TV-5kA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Bpj-ES-weH" secondAttribute="trailing" constant="110.5" id="RvZ-RP-tQM"/>
                             <constraint firstItem="o3u-XM-hkW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="V9u-Jd-Obc"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="NKO-9v-dDu" secondAttribute="trailing" constant="141" id="WFV-Kb-XDM"/>
+                            <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="NKO-9v-dDu" secondAttribute="trailing" id="WFV-Kb-XDM"/>
                             <constraint firstItem="o3u-XM-hkW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="XHi-OY-0iS"/>
                             <constraint firstItem="NKO-9v-dDu" firstAttribute="top" secondItem="Bpj-ES-weH" secondAttribute="bottom" constant="97" id="YD9-m5-75K"/>
                             <constraint firstItem="o3u-XM-hkW" firstAttribute="top" secondItem="lyN-Pm-wva" secondAttribute="bottom" constant="24" id="ZDK-mo-Pbb"/>
@@ -83,6 +117,7 @@
                         <outlet property="videoUrlField" destination="o3u-XM-hkW" id="XIC-WB-Mrs"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="32.799999999999997" y="37.331334332833585"/>
         </scene>

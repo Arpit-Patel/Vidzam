@@ -12,11 +12,11 @@ typealias NetworkCompletionHandler = (Data?, URLResponse?, Error?) -> Void
 
 class Networking {
     
-    func submitPost(urlString: String,
-              body: [String: Any] = [:],
-              headers: [String: String] = [:],
-              errorHandler: @escaping (String) -> (Void),
-              successHandler: @escaping (String) -> (Void)) {
+    func submitPost<T:Encodable>(urlString: String,
+                                 body: T,
+                                 headers: [String: String] = [:],
+                                 errorHandler: @escaping (String) -> (Void),
+                                 successHandler: @escaping ([String : Any]) -> (Void)) {
         
         let completionHandler: NetworkCompletionHandler = { (data, urlResponse, error) in
             if let error = error {
@@ -28,8 +28,13 @@ class Networking {
                 errorHandler(urlResponse.debugDescription)
                 return
             } else {
-                let dataDict = String(data: data!, encoding: String.Encoding.utf8) as String!
-                successHandler(dataDict!)
+                var dataDict = Dictionary<String, Any>()
+                do {
+                    dataDict = try JSONSerialization.jsonObject(with: data!, options: []) as! [String : Any]
+                } catch {
+                    errorHandler("Could not serialize data.")
+                }
+                successHandler(dataDict)
                 return
             }
         }
